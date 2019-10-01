@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  clojupyter:
+    build: .
+    volumes:
+      - .:/home/jovyan/notebooks # jovyan is the standard jupyter user
+    ports:
+      - 8888:8888
